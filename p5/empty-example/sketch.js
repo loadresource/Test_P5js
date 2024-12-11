@@ -8,6 +8,6 @@ function draw() {
   stroke(255);
   strokeWeight(2);
   if(mouseIsPressed == true){
-    circle(mouseX,mouseY,50)
+    circle(mouseX,mouseY,random(10,50))
   }
 }
