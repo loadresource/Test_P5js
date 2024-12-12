@@ -13,7 +13,7 @@ function draw() {
   // When mouse is just hovering - create smaller, unfilled circles
   else {
     fill(0);
-    stroke(color(random(0,255), 0, random(0,255))); // Purple-ish colors
+    stroke(color(random(0,255), random(0,255), random(0,255))); // Purple-ish colors
     circle(mouseX, mouseY, random(10,20));
   }  
 }
