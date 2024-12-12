@@ -1,19 +1,15 @@
 function setup() {
-  createCanvas(400, 400);
-  background(0);
+  createCanvas(windowWidth, windowHeight);
+  background(255);
 }
 
 function draw() {
-  fill(0);
-  stroke(255);
+  stroke(random(255), random(255), random(255));
   strokeWeight(2);
+  
   if(mouseIsPressed) {
-    circle(mouseX, mouseY, random(25,50));
+    circle(mouseX, mouseY, 40);
+  } else {
+    square(mouseX, mouseY, 15);
   }
-  // When mouse is just hovering - create smaller, unfilled circles
-  else {
-    fill(0);
-    stroke(color(random(0,255), random(0,255), random(0,255))); // Purple-ish colors
-    circle(mouseX, mouseY, random(10,20));
-  }  
 }
